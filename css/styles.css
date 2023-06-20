@@ -1,0 +1,112 @@
+*,::before,::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --paleBlue: hsl(225, 100%, 94%);
+    --brightBlue: hsl(245, 75%, 52%);
+    --veryPaleBlue: hsl(225, 100%, 98%);
+    --desaturatedBlue: hsl(224, 23%, 55%);
+    --darkBlue: hsl(223, 47%, 23%);
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: -80px;
+    background-color: rgb(224, 232, 255);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+main{
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.heroImg{
+    width: 350px;
+    height: 200px;
+}
+.heroImg img{
+    width: 100%;
+    height: 100%;
+}
+.content{
+    width: 350px;
+    background: var(--veryPaleBlue);
+    padding: 1.5rem;
+}
+
+.content .desc{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.content .pricing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.25rem;
+    gap: 5rem;
+}
+
+.content .pricing .planInfo{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 55%;
+    justify-content: space-between;
+    height: 8vh;
+}
+
+.content .pricing .planInfo .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 6px;
+}
+
+.content .payBtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 12px;
+    background-color: var(--brightBlue);
+    color: var(--veryPaleBlue);
+    padding: 12px;
+    border-radius: 10px;
+}
+
+#change{
+    color: var(--brightBlue);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#cancelBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+#cancelBtn a{
+    color: gray;
+    text-decoration: none;
+    font-size: 14px;
+}
